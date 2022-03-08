@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Client Registration</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            background-color: #417066;
+        }
+
+        input {
+            margin-top: 15px;
+            border: solid rgb(235, 235, 80) 2px;
+            border-radius: 5px;
+            text-align: center;
+            font-family: New Century Schoolbook;
+            background-color: #f5f5dc;
+
+        }
+
+        #border {
+            border: solid greenyellow;
+            border-radius: 5px;
+            width: 25%;
+            height: 50%;
+            background-color: beige;
+        }
+
+        h3,
+        span {
+            margin-top: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f5f5dc;
+        }
+
+        .mb {
+            margin-bottom: 10px;
+        }
+
+        a {
+            margin-left: 85px;
+            position: absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-center align-items-center vh-100 text-center ">
+
+        <form id="border" method="post" action="client_register.php">
+            <h3>Registration Form</h3>
+            <input name="mailid" type="email" autocomplete="off" placeholder="MailId" required> <br>
+            <input name="password" type="password" placeholder="Password" required> <br>
+            <input name="mobile" type="tel" placeholder="Mobile Number" required autocomplete="off"> <br>
+            <input class="btn btn-success mb " type="submit" value="Register"> <br>
+            <span>Already Registered </span> <br> <a href="client_login.html">Login In</a>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

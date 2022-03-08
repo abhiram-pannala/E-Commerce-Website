@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        .a {
+
+            text-align: center;
+            color: #421246;
+            font-size: 500%;
+            font-weight: bolder;
+        }
+
+        .b {
+            text-align: center;
+            color: rgba(201, 173, 96, 255);
+            font-size: 170%;
+            font-weight: 550;
+            text-shadow: 2px 2px 0 rgba(220, 217, 213, 255);
+        }
+
+        span {
+            color: #421246;
+            text-shadow: none;
+        }
+
+        .ts {
+            font-size: 8px;
+        }
+
+        input {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="ts">
+        <h1 class="a">ACMEGRADE</h1>
+        <h3 class="b">EXPERIENCE <span>|</span> EXCELLENCE <span>|</span> EXCEL</h3>
+    </div>
+
+
+    <!-- <div class="text-center">
+        <h1>Welcome To Acme Cart</h1>
+    </div> -->
+
+    <div class="d-flex justify-content-center align-items-center vh-100 ">
+
+        <form method="post" action="login.php" class="text-center w-25  bg-secondary p-4 ">
+            <h2 class="text-white">Admin Login</h2>
+            <input class="form-control" name="username" placeholder="User Name" required autocomplete="off">
+            <input class="form-control" name="password" type="password" required placeholder="Enter Password">
+            <input class="btn btn-success" type="submit" value="Login">
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

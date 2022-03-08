@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Client Login</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .a {
+
+            text-align: center;
+            color: #421246;
+            font-size: 500%;
+            font-weight: bolder;
+        }
+
+        .b {
+            text-align: center;
+            color: rgba(201, 173, 96, 255);
+            font-size: 170%;
+            font-weight: 550;
+            /* text-shadow: 0 5px 2px 0 rgba(220, 217, 213, 255); */
+            /* background: #FFFFFF; */
+            text-shadow: 2px 2px 0 rgba(220, 217, 213, 255);
+            /* 4px 4px 0 rgba(220, 217, 213, 255); */
+        }
+
+        span {
+            color: #421246;
+            text-shadow: none;
+        }
+
+        .ts {
+            font-size: 8px;
+        }
+
+
+        /* ACMEGRADE LOGO */
+        /* ACMEGRADE LOGO */
+
+
+        p,
+        a {
+            margin-top: 10px;
+            margin-bottom: 0px;
+
+        }
+
+        h2 {
+            color: black;
+            font-weight: bolder;
+            font-family: 'Noto Serif Display', serif;
+            margin-top: 15px;
+        }
+
+
+        .border {
+            border-radius: 5px;
+            width: 20%;
+            height: 45%;
+            background-color: #92cbdf;
+
+        }
+
+        input {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .mb {
+            margin-top: 10px;
+        }
+
+        button {
+            font-family: 'Noto Serif Display', serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ts">
+        <h1 class="a">ACMEGRADE</h1>
+        <h3 class="b">EXPERIENCE <span>|</span> EXCELLENCE <span>|</span> EXCEL</h3>
+    </div>
+
+
+    <div class="d-flex text-center justify-content-center align-items-center vh-100 ">
+        <form class="border" method="post" action="client_login.php">
+            <h2>LOGIN FORM</h2>
+            <input class="mb" name="mailid" type="email" autocomplete="off" placeholder="E-Mail" required><br>
+            <input name="password" type="password" placeholder="Password" required> <br>
+            <button class="btn btn-success">Log In</button>
+            <p>Don't Have An Account?</p><a href="client_register.html">Register</a>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Upload Products</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 350px;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+
+        }
+
+        input {
+            margin: 10px 0 10px 0;
+            border-radius: 2px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="center">
+        <form enctype="multipart/form-data" class="text-right w-100 bg-success p-2 " method="post"
+            action="upload_products.php">
+            <h3>Upload Products</h3>
+
+            <input class="form-control" name="name" placeholder="Product Name" required autocomplete="off">
+
+            <textarea class="form-control" name="details" rows="3" placeholder="Enter Product Details"
+                required></textarea>
+
+            <input class="form-control" name="price" placeholder="Product Price" type="number" required>
+
+            <input class="form-control" name="imdata" type="file" required>
+
+            <input class="btn btn-warning" type="submit" value="Upload" required>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
